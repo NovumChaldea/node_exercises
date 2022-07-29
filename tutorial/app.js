@@ -1,10 +1,7 @@
-const amount = 12;
+//Globals
 
-if (amount <10){
-    console.log('small number')
-}
-else{
-    console.log('large number')
-}
-
-console.log(`a simple node app`)
+//__dirname -path to current directory
+//filename - file name
+//require - funtion to use modules
+//module - info about current module
+//process - info about env where the program is being executed
