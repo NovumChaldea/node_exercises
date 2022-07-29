@@ -5,9 +5,9 @@
 //require - funtion to use modules
 //module - info about current module
 //process - info about env where the program is being executed
+const names = require('./4-names')
+console.log(names)
 
-console.log(__dirname)
-
-setInterval(() => {
-    console.log("hello world")
-}, 5000);
+//sayHi('Chaldea')
+//sayHi(peter)
+//sayHi(john)
