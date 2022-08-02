@@ -1,16 +1,21 @@
-//Globals
+//OS modules
+//To operate the system
 
-//__dirname -path to current directory
-//filename - file name
-//  - funtion to use modules
-//module - info about current module
-//process - info about env where the program is being executed
-const names = require('./4-names');
-const sayHi = require('./5-utils');
-const data = require('./6-alternative-flavor');
-require('./7-mind-grenade')
+const os = require('os')
 
+//info about current user
+const user = os.userInfo();
+console.log(user);
 
-sayHi('Chaldea')
-sayHi(names.john)
-sayHi(names.peter)
+//method returns the sistem uptime in seconds
+
+console.log(`The system uptime is ${os.uptime}`)
+
+const currentOs = {
+    name: os.type(),
+    release: os.release(),
+    totalmemory:os.totalmem(),
+    freeMemory:os.freemem()
+}
+
+console.log(currentOs)
