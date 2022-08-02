@@ -1,21 +1,17 @@
-//OS modules
-//To operate the system
+const path = require('path');
 
-const os = require('os')
 
-//info about current user
-const user = os.userInfo();
-console.log(user);
 
-//method returns the sistem uptime in seconds
 
-console.log(`The system uptime is ${os.uptime}`)
+console.log(path.sep)
 
-const currentOs = {
-    name: os.type(),
-    release: os.release(),
-    totalmemory:os.totalmem(),
-    freeMemory:os.freemem()
-}
 
-console.log(currentOs)
+const filepatch = path.join('/content', 'subfolder', 'test.txt')
+
+console.log(filepatch)
+
+const base = path.basename(filepatch)
+console.log(base)
+
+const absolute = path.resolve(__dirname, 'content', 'subfolder', 'test.txt')
+console.log(absolute)
