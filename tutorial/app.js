@@ -5,5 +5,6 @@ const second = readFileSync('../content/second.txt','utf8')
 
 writeFileSync(
     '../content/result-sync.txt', `Here is the result 
-    ${first}, ${second}`
+    ${first}, ${second}`,
+    {flag:'a'}
 )
