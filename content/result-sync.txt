@@ -2,4 +2,9 @@ Here is the result
     
 First text file, Second file txtHere is the result 
     
-First text file, Second file txt
+First text file, Second file txtHere is the result 
+    A la grande le p use cuca
+, Second file txtHere is the result 
+    A la grande le p use cuca
+, Second file txtHere is the result: A la grande le p use cuca
+, Second file txt
